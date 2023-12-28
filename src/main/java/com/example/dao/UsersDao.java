@@ -17,10 +17,11 @@ public class UsersDao {
 
             conn = JDBCUtils.getConnection();
 
-            String sql = "select * from users where username = ? and password = ?";
+            String sql = "select * from users where username = ? or email =  ? and password = ?";
             ps = conn.prepareStatement(sql);
             ps.setString(1, user.getUsername());
-            ps.setString(2, user.getPassword());
+            ps.setString(2, user.getUsername());
+            ps.setString(3, user.getPassword());
 
             rs = ps.executeQuery();
 
