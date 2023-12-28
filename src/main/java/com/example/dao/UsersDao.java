@@ -74,4 +74,34 @@ public class UsersDao {
         }
         return users;
     }
+
+    public boolean register(Users users) {
+        Connection conn = null;
+        PreparedStatement ps = null;
+        int rs = 0;
+
+        try {
+
+            conn = JDBCUtils.getConnection();
+
+            String sql =  "INSERT INTO users(username,PASSWORD,email,birthday) VALUES(?,?,?,?)";
+
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, users.getUsername());
+            ps.setString(2, users.getPassword());
+            ps.setString(3, users.getEmail());
+            ps.setString(4, users.getBirthday().toString());
+
+            rs = ps.executeUpdate();
+
+            if (rs != 0){
+                return true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.close(conn, ps);
+        }
+        return false;
+    }
 }

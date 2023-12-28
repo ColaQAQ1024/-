@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "PingFang SC";
+}
+
+a:link,a:visited,a:hover,a:active{
+    color: #000;
+}
+
+input{
+    width: 578px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    padding-left: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+#container{
+    width: 1600px;
+    height: 900px;
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(233, 233, 233);
+    float: left;
+}
+
+#welcome{
+    font-size: 40px;
+    color: rgb(33, 33, 33);
+    margin-top: 90px;
+    margin-left: 70px;
+}
+
+#logo{
+    width: 430px;
+    height: 227px;
+    margin: auto;
+    padding: auto;
+    margin-top: 150px;
+}
+
+#register{
+    font-size: 25px;
+    font-family: "PingFang SC";
+    color: rgb(33, 33, 33);
+    margin-top: 250px;
+    margin-left: 70px;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    float: right;
+}
+
+#login{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    display: block;
+}
+
+#login_title{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(33, 33, 33);
+}
+
+#actionForm{
+    width: 400px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#actionForm p{
+    font-size: 14px;
+    color: rgb(207, 207, 207);
+    margin-top: 25px;
+    margin-bottom: 11px;
+}
+
+#remember{
+    width: 20px;
+    height: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+label{
+    font-size: 20px;
+}
+
+#log{
+    width: 600px;
+    height: 90px;
+    font-size: 24px;
+    background: rgb(34, 34, 34);
+    color: rgba(255, 255, 255);
+}
+
+#log:hover{
+    cursor: pointer;
+    background-color: rgb(56, 56, 56);
+    transition: 0.3s;
+}
+
+#forgot{
+    width: 600px;
+    height: 25px;
+    margin-top: 40px;
+    padding-left: 412px;
+    font-weight: bold;
+    display: block;
+}
+
+#other{
+    margin-left: 100px;
+}
+
+#other_title{
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+}
+
+#other a{
+    width: auto;
+    height: 60px;
+    margin-right: 25px;
+    margin-top: 30px;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    display: block;
+    float: left;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 11px;
+}
+
+#other a:hover{
+    background: rgb(56, 56, 56);
+    border: 1px solid rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+#other p{
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 33px;
+    margin-right: 33px;
+}

@@ -5,13 +5,18 @@ import com.example.dto.User;
 import com.example.entiy.Users;
 
 public class UserService {
+
+    public static UsersDao usersDao = new UsersDao();
+
     public Users check(User user){
-        UsersDao usersDao = new UsersDao();
         return usersDao.check(user);
     }
 
     public Users getUserById(String userId){
-        UsersDao usersDao = new UsersDao();
         return  usersDao.getUserById(userId);
+    }
+
+    public boolean register(Users users) {
+        return usersDao.register(users);
     }
 }

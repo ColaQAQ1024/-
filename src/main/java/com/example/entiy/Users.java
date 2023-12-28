@@ -13,6 +13,14 @@ public class Users {
     private Date birthday;
 
     public Users() {}
+
+    public Users(String name, String password, String email, Date birthday) {
+        this.username = name;
+        this.password = password;
+        this.email = email;
+        this.birthday = birthday;
+    }
+
     public Users(int id, String name, String password, String email, Date birthday) {
         this.id = id;
         this.username = name;

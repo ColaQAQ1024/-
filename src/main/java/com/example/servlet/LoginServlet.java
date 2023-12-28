@@ -27,11 +27,9 @@ public class LoginServlet extends HttpServlet {
         User user = new User();
         user.setUsername(userName);
         user.setPassword(passWord);
-        System.out.println(user);
 
         // 判断用户是否存在
         users = userService.check(user);
-        System.out.println(users);
 
         if (users != null){
             HttpSession session = request.getSession();
@@ -42,7 +40,7 @@ public class LoginServlet extends HttpServlet {
                 }
             response.sendRedirect("/excise_war_exploded/index.jsp");
         } else {
-            String error = "用户名或密码错误";
+            String error = "username, email or password error";
             request.setAttribute("error", error);
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         }
